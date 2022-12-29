@@ -1,8 +1,11 @@
 package com.wilmerbaby.healthcheck.model;
-
+import jakarta.persistence.*;
 import java.io.Serializable;
-
+@Entity
 public class Person implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)//GenerationType can cause problems depending on the database used
+    @Column(nullable = false, updatable = false)//parameters on column annotation specify that ID will not allow to be updated
     private long personId;
     private String personFirstName;
     private String personLastName;
