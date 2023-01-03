@@ -7,12 +7,10 @@ public class FormClass {
 
     void FormClassConstructor(String formType, String firstNameForm, String lastNameForm)
     {
-
         this.formType = formType;
         this.firstNameForm = firstNameForm;
         this.lastNameForm = lastNameForm;
         System.out.println( "created constructor");
-
     }
 
 

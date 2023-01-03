@@ -1,4 +1,4 @@
-package com.wilmerbaby.healthcheck.model;
+package com.wilmerbaby.healthcheck;
 
 public class Place {
     public Place(){

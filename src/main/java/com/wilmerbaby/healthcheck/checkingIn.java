@@ -1,20 +1,21 @@
-package com.wilmerbaby.healthcheck.model;
+package com.wilmerbaby.healthcheck;
 
 
 class checkingIn
 {
-    void checkPersonIn(String form)
+    Object[] checkPersonIn(Object[] form)
     {
-        if(form.length()==0)
+       Object[] formObj = checkPersonIn(form);
+        if(formObj.length==0)
         {
-
             System.out.println("person not saved");
         }
+
         else
         {
-
             System.out.println("saved person info");
         }
+        return formObj;
 
     }
 

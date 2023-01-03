@@ -2,7 +2,7 @@ package com.wilmerbaby.healthcheck;
 
 public class checksForExistingPerson
 {
-    String [] compare(String [] person, String[] checkInForm)
+    Object[] compare(Object [] person, String[] checkInForm)
     {
         if(person.length == 0 | checkInForm.length == 0)
         {
